@@ -1,0 +1,195 @@
+/*
+0 - 600px: Phone
+600 - 900px : Tablet Portrait
+900 - 1200px : Tablet lnadscape
+1200 - 1800px : desktop
+1800px + : Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port : 56.25
+- tab-land : 75 em
+- big-desktop : 112.5em
+
+ORDER: Base + typhography > general layout + gird > page layout > components
+
+
+1em=16px for media queries
+*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Sunshiney&display=swap");
+@-webkit-keyframes fade-up {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 5rem;
+  margin: 3rem 0;
+}
+
+.header {
+  background-image: url(../images/hero-image.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  text-align: center;
+  color: #ffff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hero__heading {
+  font-family: "Sunshiney", cursive;
+  font-size: 3.6rem;
+  letter-spacing: 0.175em;
+  margin-bottom: 5rem;
+  -webkit-animation: fade-up 1s ease-out;
+          animation: fade-up 1s ease-out;
+}
+
+.hero__btn {
+  color: #ffff;
+  padding: 1.1rem 2.6rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  display: inline-block;
+  border: 1px solid #ffff;
+  -webkit-animation: fade-up 1s ease-out;
+          animation: fade-up 1s ease-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hero__btn:hover {
+  background-color: #27988b;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.nav {
+  position: relative;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffff;
+}
+
+.nav__links {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+  margin-left: 4.5rem;
+}
+
+.nav__link {
+  color: #ffff;
+}
+
+.nav__link--btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+}
+
+.search {
+  text-align: center;
+}
+
+.search > * {
+  display: inline-block;
+  padding: 1.5rem 2.6rem;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.search__dropdown {
+  color: #989898;
+}
+
+.search__dropdown i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.search__btn {
+  margin-left: 2rem;
+  border: none;
+}
+
+.icon {
+  margin-left: 1rem;
+}
+
+.btn-green {
+  background-color: #3DB9AA;
+  color: #ffff;
+}
+/*# sourceMappingURL=main.css.map */

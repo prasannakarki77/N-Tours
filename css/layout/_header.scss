@@ -1,0 +1,37 @@
+.header {
+  background-image: url(../images/hero-image.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  text-align: center;
+  color: $color-white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  &__heading {
+    font-family: "Sunshiney", cursive;
+    font-size: 3.6rem;
+    letter-spacing: 0.175em;
+    margin-bottom: 5rem;
+    animation: fade-up 1s ease-out;
+  }
+  &__btn {
+    color: $color-white;
+    padding: 1.1rem 2.6rem;
+    border-radius: 20px;
+    font-size: 2rem;
+    display: inline-block;
+    border: 1px solid $color-white;
+    animation: fade-up 1s ease-out;
+    transition: all 0.3s ease;
+    position: relative;
+    &:hover{
+        background-color: $color-primary-dark;
+        transform: scale(1.01);
+    }
+  }
+}

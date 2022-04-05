@@ -1,0 +1,30 @@
+.nav {
+position: relative;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: $color-white;
+   
+  }
+  &__links {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+  }
+  &__item {
+    list-style: none;
+    margin-left: 4.5rem;
+  }
+  &__link {
+    color: $color-white;
+
+    &--btn {
+        padding: 0.7rem 1.5rem;
+        border-radius: 7px;
+    }
+  }
+}
